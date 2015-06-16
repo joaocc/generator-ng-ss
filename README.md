@@ -1,0 +1,2 @@
+# ngSS
+AngularJS Accelerator
