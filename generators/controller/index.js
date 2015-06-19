@@ -10,10 +10,7 @@ module.exports = BaseSubgenerator.extend({
             desc: 'The subgenerator name'
         });
 
-        this.log(this.options.path, 'path');
-        // this._getConfig();
         this._generateSettings();
-
         this.log('You called the GulpAngular subgenerator(CONTROLLER) with the argument ' + this.name + '.');
     },
 
@@ -49,7 +46,7 @@ module.exports = BaseSubgenerator.extend({
 
     _generateSpec: function () {
         var subfolder = (this.options.nowrap) ? '/' : '/spec/';
-        
+
         this._copyTpl(
             'spec.es6',
             [

@@ -58,8 +58,6 @@ module.exports = BaseSubgenerator.extend({
     },
 
     _generateRenderOptions: function () {
-        // var path = this._pathParser(this.options.path);
-        // this.scaffoldSettings.controllerName = this.scaffoldSettings.name
         return this.scaffoldSettings;
     },
 
@@ -70,18 +68,6 @@ module.exports = BaseSubgenerator.extend({
         this._createDirective(this.scaffoldSettings);
         this._createView(this.scaffoldSettings);
         this._createStyle(this.scaffoldSettings);
-
-        // this._copyTpl(
-        //     'index.es6',
-        //     [
-        //         this.scaffoldSettings.fullPath,
-        //         this.scaffoldSettings.name,
-        //         'index.js'
-        //     ].join('/'),
-        //     this._generateRenderOptions()
-        // );
-
-        // this._require();
     }
 
 });

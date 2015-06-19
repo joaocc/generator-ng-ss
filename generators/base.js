@@ -61,18 +61,10 @@ module.exports = yeoman.generators.Base.extend({
     },
 
     _injectModule: function (file) {
-        // var injectStr = "'" + [
-        //         // "'",
-        //         this.appName,
-        //         // ".",
-        //         this.scaffoldSettings.context,
-        //         // ".",
-        //         this.scaffoldSettings.name,
-        //         // "'"
-        //     ].filter(this._filterCallback).join('.') + "'",
         var injectStr = "'" + this.scaffoldSettings.moduleName + "'",
             tabs = file.match(/\s*(?=\/\/module: inject)/);
             tabs = (tabs) ? tabs[0] : '';
+
         if (file.indexOf(injectStr) === -1) {
             file = file.replace(/\/\/module: inject/, [
                 injectStr,
@@ -94,11 +86,9 @@ module.exports = yeoman.generators.Base.extend({
                 this.scaffoldSettings.path,
                 '/styles/',
                 this.scaffoldSettings.name,
-                // '.',
-                // extension,
                 '";'
             ].join('');
-            console.warn(injectStr, 8999)
+
         if (file.indexOf(injectStr) === -1) {
             file = file.replace(/\/\/ ?endinjector/, injectStr + '\n// endinjector');
             this.fs.write(mainStyles, file);

@@ -1,7 +1,7 @@
 # generator-ng-ss
 
-[![Build Status](https://img.shields.io/travis/Swiip/generator-ng-ss/master.svg?style=flat)](http://travis-ci.org/Swiip/generator-ng-ss)
-[![Coverage Status](http://img.shields.io/coveralls/Swiip/generator-ng-ss.svg?style=flat)](https://coveralls.io/r/Swiip/generator-gulp-angular?branch=master)
+[![Build Status](https://img.shields.io/travis/Swiip/generator-gulp-angular/master.svg?style=flat)](http://travis-ci.org/Swiip/generator-gulp-angular)
+[![Coverage Status](http://img.shields.io/coveralls/Swiip/generator-gulp-angular.svg?style=flat)](https://coveralls.io/r/Swiip/generator-gulp-angular?branch=master)
 [![Dependencies](http://img.shields.io/david/Swiip/generator-gulp-angular.svg?style=flat)](https://david-dm.org/eleven-labs/generator-gulp-angular)
 [![Download Month](http://img.shields.io/npm/dm/generator-gulp-angular.svg?style=flat)](https://www.npmjs.org/package/generator-gulp-angular)
 [![NPM Version](http://img.shields.io/npm/v/generator-gulp-angular.svg?style=flat)](https://www.npmjs.org/package/generator-gulp-angular)
@@ -42,13 +42,13 @@ Make a new directory, and `cd` into it:
 mkdir my-new-project && cd $_
 ```
 
-Run `yo gulp-angular`, optionally passing an app name:
+Run `yo ng-ss`, optionally passing an app name:
 ```
-yo gulp-angular [app-name]
+yo ng-ss [app-name]
 ```
 
 ### Yo options
-`yo gulp-angular --help` or `yo gulp-angular -h` for help. All options are not required. If not provided, default values will be used.
+`yo yo ng-ss --help` or `yo ng-ss -h` for help. All options are not required. If not provided, default values will be used.
 
 * `--app-path='src'` customize Angular's app folder, relative to cwd, default is `src`
 * `--dist-path='dist'` customize build target folder, relative to cwd, default is `dist`
@@ -146,7 +146,7 @@ The root directory generated for a app with name `gulpAngular` :
 
 ## Changelog
 
-[All changes listed in the GitHub releases](https://github.com/Swiip/generator-ng-ss/releases)
+[All changes listed in the GitHub releases](https://github.com/Swiip/generator-gulp-angular/releases)
 
 ## Contributing
 
