@@ -49,6 +49,7 @@ module.exports = BaseSubgenerator.extend({
 
     _generateSpec: function () {
         var subfolder = (this.options.nowrap) ? '/' : '/spec/';
+        
         this._copyTpl(
             'spec.es6',
             [

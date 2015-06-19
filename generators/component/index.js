@@ -15,17 +15,19 @@ module.exports = BaseSubgenerator.extend({
     },
 
     _createDirective: function (renderOptions) {
-        this.composeWith('gulp-angular:directive', {
+        this.composeWith('ng-ss:directive', {
             args: [renderOptions.name],
             options: {
+                nowrap: true,
                 tpl: true,
-                path: 'components/' + this.scaffoldSettings.name
+                path: 'components/' + this.scaffoldSettings.name,
+                controller: true
             }
         });
     },
 
     _createController: function (renderOptions) {
-        this.composeWith('gulp-angular:controller', { 
+        this.composeWith('ng-ss:controller', { 
             args: [renderOptions.name],
             options: {
                 nowrap: true,
@@ -36,7 +38,7 @@ module.exports = BaseSubgenerator.extend({
     },
 
     _createView: function (renderOptions) {
-        this.composeWith('gulp-angular:view', { 
+        this.composeWith('ng-ss:view', { 
             args: [renderOptions.name],
             options: {
                 nowrap: true,
@@ -46,7 +48,7 @@ module.exports = BaseSubgenerator.extend({
     },
 
     _createStyle: function (renderOptions) {
-        this.composeWith('gulp-angular:style', { 
+        this.composeWith('ng-ss:style', { 
             args: [renderOptions.name],
             options: {
                 nowrap: true,

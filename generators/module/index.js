@@ -15,7 +15,7 @@ module.exports = BaseSubgenerator.extend({
     },
 
     _createController: function (renderOptions) {
-        this.composeWith('gulp-angular:controller', { 
+        this.composeWith('ng-ss:controller', { 
             args: [renderOptions.name],
             options: {
                 path: renderOptions.path + '/' + this.scaffoldSettings.name
@@ -24,7 +24,7 @@ module.exports = BaseSubgenerator.extend({
     },
 
     _createView: function (renderOptions) {
-        this.composeWith('gulp-angular:view', { 
+        this.composeWith('ng-ss:view', { 
             args: [renderOptions.name],
             options: {
                 path: renderOptions.path + '/' + this.scaffoldSettings.name
@@ -33,7 +33,7 @@ module.exports = BaseSubgenerator.extend({
     },
 
     _createStyle: function (renderOptions) {
-        this.composeWith('gulp-angular:style', { 
+        this.composeWith('ng-ss:style', { 
             args: [renderOptions.name],
             options: {
                 path: renderOptions.path + '/' + this.scaffoldSettings.name

@@ -10,7 +10,7 @@ module.exports = BaseSubgenerator.extend({
             type: String,
             desc: 'The subgenerator name'
         });
-
+        this._generateSettings();
         this.log('You called the GulpAngular subgenerator with the argument ' + this.name + '.');
     },
 
@@ -48,27 +48,65 @@ module.exports = BaseSubgenerator.extend({
         return {
             moduleName: this.appName,
             name: this.scaffoldSettings.name,
-            templateUrl: tpl
+            templateUrl: tpl,
+            controller: this.options.controller,
+            capitalizeName: this.scaffoldSettings.capitalizeName
         };
     },
 
     writing: function () {
-        this._generateSettings();
+        // var subfolder = (this.options.nowrap) ? '/' : '/directives/';
+
 
         // this._createController(this.scaffoldSettings);
         // this._createView(this.scaffoldSettings);
         // this._createStyle(this.scaffoldSettings);
+        // this._copyTpl(
+        //     'directive.es6',
+        //     [
+        //         this.scaffoldSettings.fullPath,
+        //         subfolder,
+        //         this.scaffoldSettings.name,
+        //         '.directive.js'
+        //     ].join(''),
+        //     this._generateRenderOptions()
+        // );
+
+        this._generateDirective();
+        this._generateSpec();
+
+        // this._require();
+    },
+
+    _generateDirective: function() {
+        var subfolder = (this.options.nowrap) ? '/' : '/directives/';
+
         this._copyTpl(
             'directive.es6',
             [
                 this.scaffoldSettings.fullPath,
-                // this.scaffoldSettings.name,
-                this.scaffoldSettings.name + '.directive.js'
-            ].join('/'),
+                subfolder,
+                this.scaffoldSettings.name,
+                '.directive.js'
+            ].join(''),
             this._generateRenderOptions()
         );
+    },
 
-        // this._require();
+    _generateSpec: function () {
+        var subfolder = (this.options.nowrap) ? '/' : '/spec/';
+
+        this._copyTpl(
+            'spec.es6',
+            [
+                this.scaffoldSettings.fullPath,
+                subfolder,
+                this.scaffoldSettings.name,
+                '.directive.spec.js'
+            ].join(''),
+            this._generateRenderOptions()
+        );
     }
+
 
 });

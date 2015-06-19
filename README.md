@@ -1,7 +1,7 @@
-# generator-gulp-angular
+# generator-ng-ss
 
-[![Build Status](https://img.shields.io/travis/Swiip/generator-gulp-angular/master.svg?style=flat)](http://travis-ci.org/Swiip/generator-gulp-angular)
-[![Coverage Status](http://img.shields.io/coveralls/Swiip/generator-gulp-angular.svg?style=flat)](https://coveralls.io/r/Swiip/generator-gulp-angular?branch=master)
+[![Build Status](https://img.shields.io/travis/Swiip/generator-ng-ss/master.svg?style=flat)](http://travis-ci.org/Swiip/generator-ng-ss)
+[![Coverage Status](http://img.shields.io/coveralls/Swiip/generator-ng-ss.svg?style=flat)](https://coveralls.io/r/Swiip/generator-gulp-angular?branch=master)
 [![Dependencies](http://img.shields.io/david/Swiip/generator-gulp-angular.svg?style=flat)](https://david-dm.org/eleven-labs/generator-gulp-angular)
 [![Download Month](http://img.shields.io/npm/dm/generator-gulp-angular.svg?style=flat)](https://www.npmjs.org/package/generator-gulp-angular)
 [![NPM Version](http://img.shields.io/npm/v/generator-gulp-angular.svg?style=flat)](https://www.npmjs.org/package/generator-gulp-angular)
@@ -10,13 +10,13 @@
 
 Offers you a Yeoman generator to initiate a Web application with Angular powered by GulpJS.
 
-![Logo](app/templates/src/assets/images/generator-gulp-angular-logo-200x200.png)
+![Logo](app/templates/src/assets/images/SoftServe.png)
 
-## Why generator-gulp-angular ?
+## Why generator-ng-ss ?
 
 This generator combines the best features of other generators like [generator-angular](https://github.com/yeoman/generator-angular), [ngTailor](https://github.com/lauterry/generator-ngtailor) and [generator-gulp-webapp](https://github.com/yeoman/generator-gulp-webapp) into an optimal workflow for starting applications with AngularJS powered by Gulp!
 
-generator-gulp-angular scaffolds an AngularJS application with a full-featured gulpfile.js, giving you immediate out-of-the-box access to all tasks for modern web development.
+generator-ng-ss scaffolds an AngularJS application with a full-featured gulpfile.js, giving you immediate out-of-the-box access to all tasks for modern web development.
 
 
 My intention is to create a generator that gives users total control over their development toolbox so they can immediately start projects with their preferred tools, such as specific UI frameworks or JavaScript preprocessors.
@@ -32,9 +32,9 @@ Install the required tools: `yo`, `gulp`, `bower`
 npm install -g yo gulp bower
 ```
 
-Install `generator-gulp-angular`:
+Install `generator-ng-ss`:
 ```
-npm install -g generator-gulp-angular
+npm install -g generator-ng-ss
 ```
 
 Make a new directory, and `cd` into it:
@@ -146,7 +146,7 @@ The root directory generated for a app with name `gulpAngular` :
 
 ## Changelog
 
-[All changes listed in the GitHub releases](https://github.com/Swiip/generator-gulp-angular/releases)
+[All changes listed in the GitHub releases](https://github.com/Swiip/generator-ng-ss/releases)
 
 ## Contributing
 

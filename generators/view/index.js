@@ -17,7 +17,7 @@ module.exports = BaseSubgenerator.extend({
     writing: function() {
         var htmlPreprocessorSettings = this.config.get('props').htmlPreprocessor,
             format = '.' + htmlPreprocessorSettings.extension,
-            subfolder = (this.options.nowrap) ? '/' : '/views';
+            subfolder = (this.options.nowrap) ? '/' : '/views/';
 
         this._copyTpl(
             'index' + format,

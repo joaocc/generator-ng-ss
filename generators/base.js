@@ -94,8 +94,8 @@ module.exports = yeoman.generators.Base.extend({
                 this.scaffoldSettings.path,
                 '/styles/',
                 this.scaffoldSettings.name,
-                '.',
-                extension,
+                // '.',
+                // extension,
                 '";'
             ].join('');
             console.warn(injectStr, 8999)
