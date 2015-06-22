@@ -24,7 +24,8 @@ module.exports = BaseSubgenerator.extend({
 
     _generateRenderOptions: function () {
         return {
-            name: this.scaffoldSettings.capitalizeName
+            name: this.scaffoldSettings.capitalizeName,
+            appName: this.appName
         };
     },
 

@@ -17,12 +17,13 @@ module.exports = yeoman.generators.Base.extend({
         var name = _.decapitalize(this.name);
         var path = pathArr.join('/');
         this._getConfig();
-
+        console.warn(this.projConfig.paths.src);
         this.scaffoldSettings = {
+            appName: this.appName,
             name: name,
             capitalizeName: _.capitalize(this.name),
             pathArr: pathArr,
-            fullPath: 'src/app/' + path,
+            fullPath: this.projConfig.paths.src + '/app/' + path,
             context: pathArr.join('.'),
             path: path,
             moduleName: [this.appName].concat(pathArr, name).join('.')
@@ -78,6 +79,7 @@ module.exports = yeoman.generators.Base.extend({
     },
 
     _injectStyle: function () {
+        return;
         var extension = this.projConfig.cssPreprocessor.extension,
             mainStyles = 'src/app/index.' + extension,
             file = this.fs.read(mainStyles),
@@ -101,7 +103,7 @@ module.exports = yeoman.generators.Base.extend({
         fs.stat(this.scaffoldSettings.fullPath + '/index.js', function (err) {
             var fileName = '/index.js',
                 file;
-
+                console.warn(err);
             if (err) { 
                 fileName = '/index.module.js';
             }
