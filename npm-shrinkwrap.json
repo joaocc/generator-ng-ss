@@ -1,5 +1,5 @@
 {
-  "name": "generator-gulp-angular",
+  "name": "generator-ng-ss",
   "version": "0.11.0",
   "dependencies": {
     "bluebird": {

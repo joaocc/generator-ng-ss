@@ -38,8 +38,8 @@ module.exports = function(GulpAngularGenerator) {
 
     if(this.props.router.module !== null) {
       this.files.push({
-        src: 'src/app/main/__' + this.props.ui.key + '.html',
-        dest: 'src/app/main/main.html',
+        src: 'src/app/main/views/__' + this.props.ui.key + '.html',
+        dest: 'src/app/main/views/main.html',
         template: true
       });
     }

@@ -3,7 +3,7 @@ angular.module "<%- appName %>"
     $stateProvider
       .state "home",
         url: "/"
-        templateUrl: "app/main/main.html"
+        templateUrl: "app/main/view/main.html"
         controller: "MainController"
         controllerAs: "main"
 

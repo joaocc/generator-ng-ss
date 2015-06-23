@@ -7,7 +7,7 @@ module.exports = function(GulpAngularGenerator) {
    * Configure routing by defining what to add in the index.html and what in the app.js
    */
   GulpAngularGenerator.prototype.computeRouter = function computeRouter() {
-    var routerPartialSrc = 'src/app/main/__' + this.props.ui.key + '.html';
+    var routerPartialSrc = 'src/app/main/views/__' + this.props.ui.key + '.html';
 
     if (this.props.router.module === 'ngRoute') {
       this.routerHtml = '<div ng-view></div>';

@@ -116,6 +116,64 @@ The root directory generated for a app with name `gulpAngular` :
 ├──  protractor.conf.js
 </pre>
 
+## Sub-generators
+Also you can use sub-generators for creating program modules, components, etc.
+All of command should enter in main project folder.
+
+### wrap-module
+```
+yo ng-ss:wrap-module <name> --path=<path>
+```
+For example, let's create module with name 'quest' in `main` module
+```
+yo ng-ss:wrap-module quest --path=main
+```
+It will create `index.js` file in folder `app/main/quest`, also this file will be including in `index.js` in `app/main` 
+folder.  
+If path is empty, it will be create in `app` folder and including into `index.module.js`
+
+### module
+```
+yo ng-ss:module <name> --path=<path>
+```
+For example, lets create `gold` in `quest` module
+```
+yo ng-ss:module gold --path=main/quest
+```
+
+It will create next structure:
+`app/main/quest/gold/index.js`  
+`app/main/quest/gold/controllers/gold.controller.js`
+`app/main/quest/gold/spec/gold.controller.spec.js`
+`app/main/quest/gold/views/gold.html`
+`app/main/quest/gold/styles/gold.less`  
+
+Also `gold` module will be including into quest module, and parts of `gold` module will be including in 
+`app/main/quest/gold/index.js` too.
+
+### component
+```
+yo ng-ss:component <name> --include=<listOfComponents> --exclude=<listOfComponents>
+```
+
+This generator creates new components in `components` with next structure
+`app/components/<name>/<name>.controller.js`  
+`app/components/<name>/<name>.controller.spec.js`  
+`app/components/<name>/<name>.directive.js`   
+`app/components/<name>/<name>.directive.spec.js`   
+`app/components/<name>/<name>.less`   
+`app/components/<name>/<name>.html`   
+
+Also you can choose components which will be include or exclude from list of generating files.  
+For example
+```
+yo ng-ss:component test --include=view,controller
+```
+or
+```
+yo ng-ss:component test --exclude=style,directive
+```
+
 ## Features included in the gulpfile
 * *useref* : allow configuration of your files in comments of your HTML file
 * *ngAnnotate* : convert simple injection to complete syntax to be minification proof
