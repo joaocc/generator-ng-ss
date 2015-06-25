@@ -4,7 +4,7 @@ angular.module "<%- appName %>"
       .state "home",
         url: "/"
         templateUrl: "app/main/view/main.html"
-        controller: "MainController"
+        controller: "MainCtrl"
         controllerAs: "main"
 
     $urlRouterProvider.otherwise '/'

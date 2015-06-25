@@ -11,7 +11,7 @@
       .state('home', {
         url: '/',
         templateUrl: 'app/main/views/main.html',
-        controller: 'MainController',
+        controller: 'MainCtrl',
         controllerAs: 'main'
       });
 

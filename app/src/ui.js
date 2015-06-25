@@ -45,16 +45,24 @@ module.exports = function(GulpAngularGenerator) {
     }
 
     this.files.push({
+        src: 'src/app/main/styles/__main.' + this.props.cssPreprocessor.extension,
+        dest: 'src/app/main/styles/main.' + this.props.cssPreprocessor.extension,
+        template: false
+    });
+
+    this.files.push({
       src: 'src/app/_' + this.props.ui.key + '/__' + this.props.ui.key + '-index.' + this.props.cssPreprocessor.extension,
       dest: 'src/app/index.' + this.props.cssPreprocessor.extension,
       template: false
     });
 
-    this.files.push({
-      src: 'src/app/components/malarkey/__malarkey.' + this.props.cssPreprocessor.extension,
-      dest: 'src/app/components/malarkey/malarkey.' + this.props.cssPreprocessor.extension,
-      template: false
-    });
+    //this.files.push({
+    //  src: 'src/app/components/malarkey/__malarkey.' + this.props.cssPreprocessor.extension,
+    //  dest: 'src/app/components/malarkey/malarkey.' + this.props.cssPreprocessor.extension,
+    //  template: false
+    //});
+
+
 
     this.files.push({
       src: 'src/app/components/navbar/__navbar.' + this.props.cssPreprocessor.extension,
