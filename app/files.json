@@ -47,6 +47,10 @@
     "src/app/main/index.js",
     "src/app/main/controllers/main.controller.js",
     "src/app/main/spec/main.controller.spec.js",
+    "src/app/components/webDevTec/webDevTec.service.js",
+    "src/app/components/githubContributor/githubContributor.service.js",
+    "src/app/components/malarkey/malarkey.directive.js",
+    "src/app/components/malarkey/malarkey.controller.js",
     "src/app/components/navbar/navbar.directive.js",
     "src/app/components/navbar/navbar.controller.js"
   ]

@@ -9,14 +9,14 @@ import runBlock from './index.run';
 //import WebDevTecService from '../app/components/webDevTec/webDevTec.service';
 //import NavbarDirective from '../app/components/navbar/navbar.directive';
 //import MalarkeyDirective from '../app/components/malarkey/malarkey.directive';
-import NavbarDirective from '../app/components/navbar/navbar.directive';
+//import NavbarDirective from '../app/components/navbar/navbar.directive';
 import './main';
 //module: import
 
 angular.module('<%- appName %>', [<%- modulesDependencies %>, '<%- appName %>.main'])
   //.constant('malarkey', malarkey)
-  .constant('toastr', toastr)
-  .constant('moment', moment)
+  //.constant('toastr', toastr)
+  //.constant('moment', moment)
   .config(config)
 <% if (props.router.key !== 'none') { %>
   //.config(routerConfig)
@@ -25,5 +25,5 @@ angular.module('<%- appName %>', [<%- modulesDependencies %>, '<%- appName %>.ma
   //.service('githubContributor', GithubContributorService)
   //.service('webDevTec', WebDevTecService)
   //.controller('MainController', MainController)
-  .directive('acmeNavbar', () => new NavbarDirective());
+  //.directive('acmeNavbar', () => new NavbarDirective());
   //.directive('acmeMalarkey', () => new MalarkeyDirective(malarkey));

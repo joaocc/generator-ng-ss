@@ -13,12 +13,14 @@ module.exports = yeoman.generators.Base.extend({
     },
 
     _generateSettings: function () {
-        var pathArr = this._pathParser(this.options.path);
-        var name = _.decapitalize(this.name);
-        var path = pathArr.join('/');
+        var pathArr = this._pathParser(this.options.path),
+            name = _.decapitalize(this.name),
+            path = pathArr.join('/');
+
         this._getConfig();
         console.warn(this.projConfig.paths.src);
         this.scaffoldSettings = {
+            router: this.config.get('router'),
             appName: this.appName,
             name: name,
             capitalizeName: _.capitalize(this.name),

@@ -42,6 +42,16 @@ module.exports = BaseSubgenerator.extend({
     },
 
     _generateRenderOptions: function () {
+        var ext = '.html';
+
+        this.scaffoldSettings.templateUrl = [
+            'app',
+            this.scaffoldSettings.name,
+            this.scaffoldSettings.path,
+            'views',
+            this.scaffoldSettings.name + ext
+        ].filter(this._filterCallback).join('/');
+
         return this.scaffoldSettings;
     },
 

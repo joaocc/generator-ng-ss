@@ -130,13 +130,6 @@
           "module": "ngRoute"
         },
         "name": "ngRoute, the official router"
-      },
-      {
-        "value": {
-          "key": "none",
-          "module": null
-        },
-        "name": "None"
       }
     ]
   },
@@ -252,24 +245,10 @@
       },
       {
         "value": {
-          "key": "ruby-sass",
-          "extension": "scss"
-        },
-        "name": "Sass (Ruby), Original Syntactically Awesome StyleSheets (requires Ruby)"
-      },
-      {
-        "value": {
           "key": "less",
           "extension": "less"
         },
         "name": "Less, extends the CSS language, adding features that allow variables, mixins, functions and many other techniques."
-      },
-      {
-        "value": {
-          "key": "stylus",
-          "extension": "styl"
-        },
-        "name": "Stylus, supporting both an indented syntax and regular CSS style."
       },
       {
         "value": {
@@ -308,22 +287,6 @@
           "srcExtension": "es6"
         },
         "name": "ES6 (Traceur), ECMAScript 6 compiled with the Traceur compiler from Google."
-      },
-      {
-        "value": {
-          "key": "coffee",
-          "extension": "coffee",
-          "srcExtension": "coffee"
-        },
-        "name": "CoffeeScript, \"a little language that compiles into JavaScript\"."
-      },
-      {
-        "value": {
-          "key": "typescript",
-          "extension": "ts",
-          "srcExtension": "ts"
-        },
-        "name": "TypeScript, a typed superset of JavaScript that compiles to plain JavaScript."
       }
     ]
   },
@@ -338,27 +301,6 @@
           "extension": "html"
         },
         "name": "None, I like to code in standard HTML."
-      },
-      {
-        "value": {
-          "key": "jade",
-          "extension": "jade"
-        },
-        "name": "Jade (*.jade)"
-      },
-      {
-        "value": {
-          "key": "haml",
-          "extension": "haml"
-        },
-        "name": "Haml (*.haml)"
-      },
-      {
-        "value": {
-          "key": "handlebars",
-          "extension": "hbs"
-        },
-        "name": "Handlebars (*.hbs)"
       }
     ]
   }
