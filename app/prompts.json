@@ -266,14 +266,6 @@
     "choices": [
       {
         "value": {
-          "key": "none",
-          "extension": "js",
-          "srcExtension": "js"
-        },
-        "name": "None, I like to code in standard JavaScript."
-      },
-      {
-        "value": {
           "key": "babel",
           "extension": "js",
           "srcExtension": "es6"
