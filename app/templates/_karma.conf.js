@@ -53,7 +53,7 @@ module.exports = function(config) {
 <% } -%>
 
     ngHtml2JsPreprocessor: {
-      stripPrefix: 'src/',
+      stripPrefix: conf.paths.src + '/',
       moduleName: '<%- appName %>'
     },
 
@@ -76,7 +76,11 @@ module.exports = function(config) {
 
     preprocessors: {
       'src/**/*.html': ['ng-html2js']
-    }
+    },
+
+    exclude: [
+      conf.paths.src + '/index.html'
+    ]
   };
 
   // This block is needed to execute Chrome on Travis

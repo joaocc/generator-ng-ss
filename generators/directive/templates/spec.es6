@@ -1,3 +1,3 @@
-describe('<%= name %>', function () {
+describe('<%= specName %>', function () {
     
 });

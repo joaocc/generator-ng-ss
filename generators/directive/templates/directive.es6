@@ -4,8 +4,8 @@
 
 angular.module('<%= moduleName %>', [])
 <% if (controller) { %>    .controller('<%= capitalizeName %>Ctrl', <%= capitalizeName %>Ctrl) <% } %>
-    .directive('<%= name %>', function () {
+    .directive('<%= capitalizeName %>Directive', function () {
         return {
-            <% if (templateUrl) { %>templateUrl: <%= templateUrl %><% } %>
+            <% if (templateUrl) { %>templateUrl: '<%= templateUrl %>' <% } %>
         };
     });

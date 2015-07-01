@@ -16,12 +16,21 @@ module.exports = BaseSubgenerator.extend({
     },
 
     _generateRenderOptions: function () {
-        var tpl = this.options.tpl ? this.scaffoldSettings.name : false;
+        var tpl = this.options.tpl ? this.scaffoldSettings.name : false,
+            ext = 'html';
 
         return {
             moduleName: this.appName,
             name: this.scaffoldSettings.name,
-            templateUrl: tpl,
+            specName: this.scaffoldSettings.capitalizeName + 'Directive',
+            templateUrl: [
+                'app/components/' ,
+                this.scaffoldSettings.name,
+                '/',
+                this.scaffoldSettings.name,
+                '.',
+                ext
+            ].join(''),
             controller: this.options.controller,
             capitalizeName: this.scaffoldSettings.capitalizeName
         };

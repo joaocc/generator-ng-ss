@@ -1,4 +1,4 @@
-class MalarkeyController {
+class MalarkeyCtrl {
   constructor ($log, githubContributor) {
     'ngInject';
 
@@ -23,4 +23,4 @@ class MalarkeyController {
   }
 }
 
-export default MalarkeyController;
+export default MalarkeyCtrl;

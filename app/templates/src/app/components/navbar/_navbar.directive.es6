@@ -1,4 +1,4 @@
-import NavbarController from './navbar.controller';
+import NavbarCtrl from './navbar.controller';
 
 class NavbarDirective {
     constructor() {
@@ -10,7 +10,7 @@ class NavbarDirective {
             scope: {
                 creationDate: '='
             },
-            controller: NavbarController,
+            controller: NavbarCtrl,
             controllerAs: 'vm',
             bindToController: true
         };

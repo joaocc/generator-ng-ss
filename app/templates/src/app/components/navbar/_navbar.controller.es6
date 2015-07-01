@@ -1,4 +1,4 @@
-class NavbarController {
+class NavbarCtrl {
     constructor (moment) {
         'ngInject';
 
@@ -7,4 +7,4 @@ class NavbarController {
     }
 }
 
-export default NavbarController;
+export default NavbarCtrl;

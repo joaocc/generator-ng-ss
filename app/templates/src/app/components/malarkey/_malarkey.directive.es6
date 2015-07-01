@@ -1,4 +1,4 @@
-import MalarkeyController from  './malarkey.controller';
+import MalarkeyCtrl from  './malarkey.controller';
 
 class MalarkeyDirective {
   constructor (malarkey) {
@@ -11,7 +11,7 @@ class MalarkeyDirective {
       },
       template: '&nbsp;',
       link: linkFunc,
-      controller: MalarkeyController,
+      controller: MalarkeyCtrl,
       controllerAs: 'vm'
     };
 
