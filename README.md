@@ -134,11 +134,11 @@ yo ng-ss:module gold --path=main/quest
 ```
 
 It will create next structure:
-`app/main/quest/gold/index.js`   
-`app/main/quest/gold/controllers/gold.controller.js`   
-`app/main/quest/gold/spec/gold.controller.spec.js`   
-`app/main/quest/gold/views/gold.html`
-`app/main/quest/gold/styles/gold.less`    
+`app/main/quest/gold/index.js`  
+`app/main/quest/gold/controllers/gold.controller.js`  
+`app/main/quest/gold/spec/gold.controller.spec.js`  
+`app/main/quest/gold/views/gold.html`  
+`app/main/quest/gold/styles/gold.less`  
 
 Also `gold` module will be including into quest module, and parts of `gold` module will be including in 
 `app/main/quest/gold/index.js` too.
