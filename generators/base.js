@@ -1,4 +1,4 @@
-var yeoman = require('yeoman-generator');
+var yeoman = require('yeoman-generator'),
     _ = require('underscore.string'),
     path = require('path'),
     fs = require('fs');
