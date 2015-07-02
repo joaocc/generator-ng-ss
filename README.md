@@ -5,8 +5,9 @@ Offers you a Yeoman generator to initiate a Web application with Angular powered
 ![Logo](app/templates/src/assets/images/SoftServe.png)
 
 ## Why generator-ng-ss ?
+This is a fork for [generator-gulp-angular](https://github.com/Swiip/generator-gulp-angular).  
 
-This generator combines the best features of other generators like [generator-angular](https://github.com/yeoman/generator-angular), [ngTailor](https://github.com/lauterry/generator-ngtailor) and [generator-gulp-webapp](https://github.com/yeoman/generator-gulp-webapp) into an optimal workflow for starting applications with AngularJS powered by Gulp!
+This generator combines the best features of other generators like [generator-gulp-angular](https://github.com/Swiip/generator-gulp-angular), [generator-angular](https://github.com/yeoman/generator-angular), [ngTailor](https://github.com/lauterry/generator-ngtailor) and [generator-gulp-webapp](https://github.com/yeoman/generator-gulp-webapp) into an optimal workflow for starting applications with AngularJS powered by Gulp!
 
 generator-ng-ss scaffolds an AngularJS application with a full-featured gulpfile.js, giving you immediate out-of-the-box access to all tasks for modern web development.
 
@@ -14,6 +15,10 @@ generator-ng-ss scaffolds an AngularJS application with a full-featured gulpfile
 My intention is to create a generator that gives users total control over their development toolbox so they can immediately start projects with their preferred tools, such as specific UI frameworks or JavaScript preprocessors.
 
 This project is one of many things that you can use to get started on a new app.  For a comparison of the options and the trade-offs between them, please visit [this](http://www.dancancro.com/comparison-of-angularjs-application-starters) link.
+
+
+## Difference with generator-gulp-angular
+Based on the experience we were changed project structure in according with our vision. We added more module and component decomposition. In application available large modules which includes small modules (look sub-generators description), which in turn comprise small components (controller, views, styles, spec).
 
 ## Usage
 
@@ -82,10 +87,16 @@ The root directory generated for a app with name `gulpAngular` :
 │   │   │   │   ├──  navbar.controller.js
 │   │   │   │   └──  navbar.html
 │   │   ├──  main/
-│   │   │   ├──  main.controller.js
-│   │   │   ├──  main.controller.spec.js
-│   │   │   └──  main.html
-│   │   └──  index.js
+│   │   │   ├──  controllers
+│   │   │   │    └──  main.controller.js
+│   │   │   ├──  views
+│   │   │   │    └──  main.html
+│   │   │   ├──  styles
+│   │   │   │    └──  main.(css|less|scss)
+│   │   │   └──  spec
+│   │   │   │    └──  main.controller.spec.js
+│   │   │   └──  index.js
+│   │   └──  index.module.js
 │   │   └──  index.(css|less|scss)
 │   │   └──  vendor.(css|less|scss)
 │   ├──  assets/
@@ -194,23 +205,14 @@ yo ng-ss:component test --exclude=style,directive
 * *jQuery*: jQuery 1.x, 2.x, Zepto, none
 * *Angular modules*: animate, cookies, touch, sanitize
 * *Resource handler*: ngResource, Restangular, none
-* *Router*: ngRoute, UI Router, none
+* *Router*: ngRoute, UI Router
 * *UI Framework*: Bootstrap, Foundation, Angular Material, none (depends on the chosen CSS preprocessor)
 * *UI directives* : UI Bootstrap, Angular Strap, official Bootstrap JavaScript, Angular Foundation, official Foundation JavaScript, none (depends on the UI framework)
-* *CSS pre-processor*: Less, Sass with Ruby and Node, Stylus, none
-* *JS preprocessor*: CoffeeScript, TypeScript, ECMAScript 6 (Traceur and Babel), none
-* *HTML preprocessor*: Jade, Haml, Handlebars, none
+* *CSS pre-processor*: Less, Sass
+* *JS preprocessor*: ECMAScript 6 (Traceur and Babel)
+* *HTML preprocessor*: none
 * **TODO** Script loader: Require, Webpack, none
 * **TODO** Test framework: Jasmine, Mocha, Qunit
 
-## Changelog
-
-[All changes listed in the GitHub releases](https://github.com/Swiip/generator-gulp-angular/releases)
-
-## Contributing
-
-[Guidelines](CONTRIBUTING.md)
-
 ## License
-
 MIT
