@@ -1,13 +1,5 @@
 # generator-ng-ss
 
-[![Build Status](https://img.shields.io/travis/Swiip/generator-gulp-angular/master.svg?style=flat)](http://travis-ci.org/Swiip/generator-gulp-angular)
-[![Coverage Status](http://img.shields.io/coveralls/Swiip/generator-gulp-angular.svg?style=flat)](https://coveralls.io/r/Swiip/generator-gulp-angular?branch=master)
-[![Dependencies](http://img.shields.io/david/Swiip/generator-gulp-angular.svg?style=flat)](https://david-dm.org/eleven-labs/generator-gulp-angular)
-[![Download Month](http://img.shields.io/npm/dm/generator-gulp-angular.svg?style=flat)](https://www.npmjs.org/package/generator-gulp-angular)
-[![NPM Version](http://img.shields.io/npm/v/generator-gulp-angular.svg?style=flat)](https://www.npmjs.org/package/generator-gulp-angular)
-[![Gitter](http://img.shields.io/badge/Gitter-room-brightgreen.svg?style=flat)](https://gitter.im/Swiip/generator-gulp-angular)
-[![Gratipay](http://img.shields.io/gratipay/Swiip.svg?style=flat)](https://gratipay.com/Swiip/)
-
 Offers you a Yeoman generator to initiate a Web application with Angular powered by GulpJS.
 
 ![Logo](app/templates/src/assets/images/SoftServe.png)
@@ -124,7 +116,7 @@ All of command should enter in main project folder.
 ```
 yo ng-ss:wrap-module <name> --path=<path>
 ```
-For example, let's create module with name 'quest' in `main` module
+For example, let's create module with name `quest` in `main` module
 ```
 yo ng-ss:wrap-module quest --path=main
 ```
@@ -142,11 +134,11 @@ yo ng-ss:module gold --path=main/quest
 ```
 
 It will create next structure:
-`app/main/quest/gold/index.js`  
-`app/main/quest/gold/controllers/gold.controller.js`
-`app/main/quest/gold/spec/gold.controller.spec.js`
+`app/main/quest/gold/index.js`   
+`app/main/quest/gold/controllers/gold.controller.js`   
+`app/main/quest/gold/spec/gold.controller.spec.js`   
 `app/main/quest/gold/views/gold.html`
-`app/main/quest/gold/styles/gold.less`  
+`app/main/quest/gold/styles/gold.less`    
 
 Also `gold` module will be including into quest module, and parts of `gold` module will be including in 
 `app/main/quest/gold/index.js` too.
