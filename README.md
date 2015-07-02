@@ -79,44 +79,88 @@ More information on the gulp tasks in [this README.md](app/templates/gulp/README
 
 The root directory generated for a app with name `gulpAngular` :
 <pre>
-├──  src/
-│   ├──  app/
-│   │   ├──  components/
-│   │   │   └──  navbar/
-│   │   │   │   ├──  navbar.controller.js
-│   │   │   │   └──  navbar.html
-│   │   ├──  main/
-│   │   │   ├──  controllers
-│   │   │   │    └──  main.controller.js
-│   │   │   ├──  views
-│   │   │   │    └──  main.html
-│   │   │   ├──  styles
-│   │   │   │    └──  main.(css|less|scss)
-│   │   │   └──  spec
-│   │   │   │    └──  main.controller.spec.js
-│   │   │   └──  index.js
-│   │   └──  index.module.js
-│   │   └──  index.(css|less|scss)
-│   │   └──  vendor.(css|less|scss)
-│   ├──  assets/
-│   │   └──  images/
-│   ├──  404.html
-│   ├──  favico.ico
-│   └──  index.html
-├──  gulp/
-├──  e2e/
-├──  bower_components/
-├──  nodes_modules/
-├──  .bowerrc
-├──  .editorconfig
-├──  .gitignore
-├──  .jshintrc
-├──  bower.json
-├──  gulpfile.js
-├──  karma.conf.js
-├──  package.json
-├──  protractor.conf.js
+.
+
+├── bower.json
+
+├── e2e
+
+├── gulp
+
+├── gulpfile.js
+
+├── karma.conf.js
+
+├── npm-debug.log
+
+├── package.json
+
+├── protractor.conf.js
+
+└── src
+
+    ├── app
+
+    │   ├── components
+
+    │   │   ├── githubContributor
+
+    │   │   ├── malarkey
+
+    │   │   ├── navbar
+
+    │   │   │   ├── navbar.controller.js
+
+    │   │   │   ├── navbar.directive.js
+
+    │   │   │   ├── navbar.html
+
+    │   │   │   └── navbar.less
+
+    │   │   └── webDevTec
+
+    │   ├── index.config.js
+
+    │   ├── index.less
+
+    │   ├── index.module.js
+
+    │   ├── index.route.js
+
+    │   ├── index.run.js
+
+    │   ├── main
+
+    │   │   ├── controllers
+
+    │   │   │   └── main.controller.js
+
+    │   │   ├── index.js
+
+    │   │   ├── spec
+
+    │   │   │   └── main.controller.spec.js
+
+    │   │   ├── styles
+
+    │   │   │   └── main.less
+
+    │   │   └── views
+
+    │   │       └── main.html
+
+    │   └── vendor.less
+
+    ├── assets
+
+    │   └── images
+
+    ├── favicon.ico
+
+    └── index.html
 </pre>
+
+16 directories, 50 files
 
 ## Sub-generators
 Also you can use sub-generators for creating program modules, components, etc.
