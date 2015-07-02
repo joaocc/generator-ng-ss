@@ -19,10 +19,6 @@ My intention is to create a generator that gives users total control over their 
 
 This project is one of many things that you can use to get started on a new app.  For a comparison of the options and the trade-offs between them, please visit [this](http://www.dancancro.com/comparison-of-angularjs-application-starters) link.
 
-
-## Difference with generator-gulp-angular
-Based on the experience we were changed project structure in according with our vision. We added more module and component decomposition. In application available large modules which includes small modules (look sub-generators description), which in turn comprise small components (controller, views, styles, spec).
-
 ## Usage
 
 ### Create your project
@@ -208,7 +204,7 @@ yo ng-ss:component test --exclude=style,directive
 * *jQuery*: jQuery 1.x, 2.x, Zepto, none
 * *Angular modules*: animate, cookies, touch, sanitize
 * *Resource handler*: ngResource, Restangular, none
-* *Router*: ngRoute, UI Router
+* *Router*: ngRoute, UI Router, none
 * *UI Framework*: Bootstrap, Foundation, Angular Material, none (depends on the chosen CSS preprocessor)
 * *UI directives* : UI Bootstrap, Angular Strap, official Bootstrap JavaScript, Angular Foundation, official Foundation JavaScript, none (depends on the UI framework)
 * *CSS pre-processor*: Less, Sass
