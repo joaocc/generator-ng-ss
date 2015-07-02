@@ -4,7 +4,8 @@ Offers you a Yeoman generator to initiate a Web application with Angular powered
 
 ![Logo](app/templates/src/assets/images/SoftServe.png)
 
-##Architecture
+## Architecture
+
 ![Logo](app/templates/src/assets/images/ng-ss.jpg)
 
 ## Why generator-ng-ss ?
@@ -44,7 +45,7 @@ yo ng-ss [app-name]
 ```
 
 ### Yo options
-`yo yo ng-ss --help` or `yo ng-ss -h` for help. All options are not required. If not provided, default values will be used.
+`yo ng-ss --help` or `yo ng-ss -h` for help. All options are not required. If not provided, default values will be used.
 
 * `--app-path='src'` customize Angular's app folder, relative to cwd, default is `src`
 * `--dist-path='dist'` customize build target folder, relative to cwd, default is `dist`
@@ -79,8 +80,6 @@ More information on the gulp tasks in [this README.md](app/templates/gulp/README
 
 The root directory generated for a app with name `gulpAngular` :
 <pre>
-.
-
 ├── bower.json
 
 ├── e2e
@@ -99,65 +98,65 @@ The root directory generated for a app with name `gulpAngular` :
 
 └── src
 
-    ├── app
+│   ├── app
 
-    │   ├── components
+│   │   ├── components
 
-    │   │   ├── githubContributor
+│   │   │   ├── githubContributor
 
-    │   │   ├── malarkey
+│   │   │   ├── malarkey
 
-    │   │   ├── navbar
+│   │   │   ├── navbar
 
-    │   │   │   ├── navbar.controller.js
+│   │   │   │   ├── navbar.controller.js
 
-    │   │   │   ├── navbar.directive.js
+│   │   │   │   ├── navbar.directive.js
 
-    │   │   │   ├── navbar.html
+│   │   │   │   ├── navbar.html
 
-    │   │   │   └── navbar.less
+│   │   │   │   └── navbar.less
 
-    │   │   └── webDevTec
+│   │   │   └── webDevTec
 
-    │   ├── index.config.js
+│   │   ├── index.config.js
 
-    │   ├── index.less
+│   │   ├── index.less
 
-    │   ├── index.module.js
+│   │   ├── index.module.js
 
-    │   ├── index.route.js
+│   │   ├── index.route.js
 
-    │   ├── index.run.js
+│   │   ├── index.run.js
 
-    │   ├── main
+│   │   ├── main
 
-    │   │   ├── controllers
+│   │   │   ├── controllers
 
-    │   │   │   └── main.controller.js
+│   │   │   │   └── main.controller.js
 
-    │   │   ├── index.js
+│   │   │   ├── index.js
 
-    │   │   ├── spec
+│   │   │   ├── spec
 
-    │   │   │   └── main.controller.spec.js
+│   │   │   │   └── main.controller.spec.js
 
-    │   │   ├── styles
+│   │   │   ├── styles
 
-    │   │   │   └── main.less
+│   │   │   │   └── main.less
 
-    │   │   └── views
+│   │   │   └── views
 
-    │   │       └── main.html
+│   │   │       └── main.html
 
-    │   └── vendor.less
+│   │   └── vendor.less
 
-    ├── assets
+│   ├── assets
 
-    │   └── images
+│   │   └── images
 
-    ├── favicon.ico
+│   ├── favicon.ico
 
-    └── index.html
+│   └── index.html
 </pre>
 
 16 directories, 50 files

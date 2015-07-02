@@ -18,7 +18,7 @@ module.exports = yeoman.generators.Base.extend({
             path = pathArr.join('/');
 
         this._getConfig();
-        console.warn(this.projConfig.paths.src);
+
         this.scaffoldSettings = {
             router: this.config.get('router'),
             appName: this.appName,
@@ -105,7 +105,7 @@ module.exports = yeoman.generators.Base.extend({
         fs.stat(this.scaffoldSettings.fullPath + '/index.js', function (err) {
             var fileName = '/index.js',
                 file;
-                console.warn(err);
+
             if (err) { 
                 fileName = '/index.module.js';
             }
