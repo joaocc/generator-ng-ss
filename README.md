@@ -5,7 +5,7 @@ Offers you a Yeoman generator to initiate a Web application with Angular powered
 ![Logo](app/templates/src/assets/images/SoftServe.png)
 
 ##Architecture
-
+!(app/templates/src/assets/images/ng-ss.jpeg)
 
 ## Why generator-ng-ss ?
 
