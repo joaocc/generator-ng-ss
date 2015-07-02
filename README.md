@@ -4,6 +4,9 @@ Offers you a Yeoman generator to initiate a Web application with Angular powered
 
 ![Logo](app/templates/src/assets/images/SoftServe.png)
 
+##Architecture
+![Logo](app/templates/src/assets/images/ng-ss.jpg)
+
 ## Why generator-ng-ss ?
 This is a fork for [generator-gulp-angular](https://github.com/Swiip/generator-gulp-angular).  
 
