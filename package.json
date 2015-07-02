@@ -18,7 +18,8 @@
     "generators/style",
     "generators/view",
     "generators/component",
-    "generators/directive"
+    "generators/directive",
+    "generators/base"
   ],
   "main": "app/index.js",
   "repository": "SoftServeInc/generator-ng-ss.git",
