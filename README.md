@@ -80,6 +80,7 @@ More information on the gulp tasks in [this README.md](app/templates/gulp/README
 
 The root directory generated for a app with name `gulpAngular` :
 <pre>
+
 ├── bower.json
 
 ├── e2e
@@ -157,6 +158,7 @@ The root directory generated for a app with name `gulpAngular` :
 │   ├── favicon.ico
 
 │   └── index.html
+
 </pre>
 
 16 directories, 50 files
@@ -166,6 +168,8 @@ Also you can use sub-generators for creating program modules, components, etc.
 All of command should enter in main project folder.
 
 ### wrap-module
+Wrap-module is module which includes others wrap-modules or modules.
+
 ```
 yo ng-ss:wrap-module <name> --path=<path>
 ```
@@ -198,9 +202,10 @@ Also `gold` module will be including into quest module, and parts of `gold` modu
 
 ### component
 ```
-yo ng-ss:component <name> --include=<listOfComponents> --exclude=<listOfComponents>
+yo ng-ss:component <name> --include=<partsOfComponent> --exclude=<partsOfComponent>
 ```
 
+`include` and `include` isn't mandatory parameters. If you don't enter it, generator will create all parts of component.
 
 ### available parts of component
 * `view`
@@ -210,7 +215,7 @@ yo ng-ss:component <name> --include=<listOfComponents> --exclude=<listOfComponen
 
 Also if you generate directive and controller together, controller will be included into directive.  
 
-This generator creates new components in `components` with next structure
+This generator creates new component in `components` with next structure
 `app/components/<name>/<name>.controller.js`  
 `app/components/<name>/<name>.controller.spec.js`  
 `app/components/<name>/<name>.directive.js`   
