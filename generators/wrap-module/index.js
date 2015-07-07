@@ -6,15 +6,13 @@ module.exports = BaseSubgenerator.extend({
         this.argument('name', {
             required: true,
             type: String,
-            desc: 'The subgenerator name'
+            desc: 'Wrap-module'
         });
 
         this._getConfig();
         this._generateSettings();
 
-
-        // this.log(this._initMessage);
-        // this.log('You called the GulpAngular subgenerator with the argument ' + this.name + '.');
+        this.log('You called the GulpAngular subgenerator with the argument ' + this.name + '.');
     },
 
     writing: function () {
@@ -32,19 +30,6 @@ module.exports = BaseSubgenerator.extend({
     },
 
     _generateRenderOptions: function () {
-        // this.scaffoldSettings = {
-        //     name: _.decapitalize(this.name),
-        //     capitalizeName: _.capitalize(this.name),
-        //     pathArr: pathArr,
-        //     fullPath: 'src/app/' + pathArr.join('/'),
-        //     context: pathArr.join('.'),
-        //     path: pathArr.join('/')
-        // }
-        var moduleArr = [
-            this.appName
-        ];
-        this.log(this.scaffoldSettings)
-       
         return this.scaffoldSettings;
     }
 });

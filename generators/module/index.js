@@ -8,7 +8,7 @@ module.exports = BaseSubgenerator.extend({
         this.argument('name', {
             required: true,
             type: String,
-            desc: 'The subgenerator name'
+            desc: 'Module'
         });
 
         this.log('You called the GulpAngular subgenerator with the argument ' + this.name + '.');

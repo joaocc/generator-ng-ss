@@ -4,9 +4,9 @@ var path = require('path');
 var assert = require('yeoman-generator').assert;
 var helpers = require('yeoman-generator').test;
 
-describe('GulpAngular:generators/view', function () {
+xdescribe('GulpAngular:generators/wrap-module', function () {
   before(function (done) {
-    helpers.run(path.join(__dirname, '../generators/view'))
+    helpers.run(path.join(__dirname, '../generators/wrap-module'))
       .withArguments('name')
       .withOptions({ skipInstall: true, force: true })
       .on('end', done);

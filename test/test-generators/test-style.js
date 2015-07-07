@@ -4,9 +4,9 @@ var path = require('path');
 var assert = require('yeoman-generator').assert;
 var helpers = require('yeoman-generator').test;
 
-describe('GulpAngular:generators/component', function () {
+xdescribe('GulpAngular:style', function () {
   before(function (done) {
-    helpers.run(path.join(__dirname, '../generators/component'))
+    helpers.run(path.join(__dirname, '../style'))
       .withArguments('name', '--force')
       .withOptions({ 'skip-install': true })
       .on('end', done);

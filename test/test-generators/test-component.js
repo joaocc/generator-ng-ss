@@ -4,15 +4,15 @@ var path = require('path');
 var assert = require('yeoman-generator').assert;
 var helpers = require('yeoman-generator').test;
 
-describe('GulpAngular:generators/controller', function () {
+xdescribe('GulpAngular:generators/component', function () {
   before(function (done) {
-    helpers.run(path.join(__dirname, '../generators/controller'))
-      .withArguments('name')
-      .withOptions({ skipInstall: true, force: true })
+    helpers.run(path.join(__dirname, '../../generators/component'))
+      //.withArguments('name')
+      //.withOptions({ 'skip-install': true })
       .on('end', done);
   });
 
-  it('creates files', function () {
+  it('creates files', function (done) {
     assert.file([
       'somefile.js'
     ]);

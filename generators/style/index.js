@@ -7,7 +7,7 @@ module.exports = BaseSubgenerator.extend({
         this.argument('name', {
             required: true,
             type: String,
-            desc: 'The subgenerator name'
+            desc: 'Style'
         });
         this._generateSettings();
 
@@ -37,6 +37,6 @@ module.exports = BaseSubgenerator.extend({
         return {
             name: this.scaffoldSettings.capitalizeName
         };
-    },
+    }
 
 });

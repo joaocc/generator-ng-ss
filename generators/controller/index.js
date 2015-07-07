@@ -7,7 +7,7 @@ module.exports = BaseSubgenerator.extend({
         this.argument('name', {
             required: true,
             type: String,
-            desc: 'The subgenerator name'
+            desc: 'Controller'
         });
 
         this._generateSettings();

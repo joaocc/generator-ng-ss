@@ -1,4 +1,0 @@
-describe '<%= name %>', ->
-  beforeEach ->
-
-  afterEach ->

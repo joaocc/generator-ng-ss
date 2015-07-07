@@ -4,11 +4,11 @@ var path = require('path');
 var assert = require('yeoman-generator').assert;
 var helpers = require('yeoman-generator').test;
 
-describe('GulpAngular:component', function () {
+xdescribe('GulpAngular:generators/controller', function () {
   before(function (done) {
-    helpers.run(path.join(__dirname, '../component'))
-      .withArguments('name', '--force')
-      .withOptions({ 'skip-install': true })
+    helpers.run(path.join(__dirname, '../generators/controller'))
+      .withArguments('name')
+      .withOptions({ skipInstall: true, force: true })
       .on('end', done);
   });
 
