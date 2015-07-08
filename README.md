@@ -205,7 +205,7 @@ Also `gold` module will be including into quest module, and parts of `gold` modu
 yo ng-ss:component <name> --include=<partsOfComponent> --exclude=<partsOfComponent>
 ```
 
-`include` and `include` isn't mandatory parameters. If you don't enter it, generator will create all parts of component.
+`include` and `exclude` isn't mandatory parameters. If you don't enter it, generator will create all parts of component.
 
 ### available parts of component
 * `view`
