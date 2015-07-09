@@ -5,13 +5,6 @@ var yeoman = require('yeoman-generator'),
 
 module.exports = yeoman.generators.Base.extend({
 
-    _args: [],
-    _argsSettings: [],
-
-    initializing: function () {
-
-    },
-
     _generateSettings: function () {
         var pathArr = this._pathParser(this.options.path),
             name = _.decapitalize(this.name),
@@ -78,25 +71,6 @@ module.exports = yeoman.generators.Base.extend({
         }
 
         return file;
-    },
-
-    _injectStyle: function () {
-        return;
-        var extension = this.projConfig.cssPreprocessor.extension,
-            mainStyles = 'src/app/index.' + extension,
-            file = this.fs.read(mainStyles),
-            injectStr = [
-                '@import "',
-                this.scaffoldSettings.path,
-                '/styles/',
-                this.scaffoldSettings.name,
-                '";'
-            ].join('');
-
-        if (file.indexOf(injectStr) === -1) {
-            file = file.replace(/\/\/ ?endinjector/, injectStr + '\n// endinjector');
-            this.fs.write(mainStyles, file);
-        }
     },
 
     _require: function () {

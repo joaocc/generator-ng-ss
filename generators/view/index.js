@@ -35,6 +35,6 @@ module.exports = BaseSubgenerator.extend({
         return {
             name: this.scaffoldSettings.capitalizeName
         };
-    },
+    }
 
 });

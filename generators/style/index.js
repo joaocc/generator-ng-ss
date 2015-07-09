@@ -29,8 +29,6 @@ module.exports = BaseSubgenerator.extend({
             ].join(''),
             this._generateRenderOptions()
         );
-
-        this._injectStyle();
     },
 
     _generateRenderOptions: function () {
