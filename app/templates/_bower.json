@@ -56,6 +56,21 @@
   "devDependencies": {
     "angular-mocks": "<%- props.angularVersion %>"
   },
+  <% } if(props.ui.key === 'bootstrap') { -%>
+  <%   if(props.cssPreprocessor.extension !== 'scss' && props.cssPreprocessor.extension !== 'styl') { -%>
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "css/font-awesome.css"
+      ]
+    }
+   },
+  <%   } -%>
   "resolutions": {
 <% if (props.jQuery.key === 'jquery1') { -%>
     "jquery": "~1.11.3",
